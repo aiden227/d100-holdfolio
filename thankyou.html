@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holdfolio | Your Strategy Call Is Confirmed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito Sans', sans-serif; color: #333333; background: #fff; }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .bg-holdfolio-blue { background-color: #4C93BB; }
+        .text-holdfolio-blue { color: #4C93BB; }
+        .border-holdfolio-blue { border-color: #4C93BB; }
+        .bg-holdfolio-green { background-color: #69AD5F; }
+        .text-holdfolio-green { color: #69AD5F; }
+        .bg-deep-teal { background-color: #22526E; }
+        .text-deep-teal { color: #22526E; }
+        .bg-medium-teal { background-color: #366885; }
+        .btn-primary { background-color: #4C93BB; color: #fff; transition: all 0.3s ease; }
+        .btn-primary:hover { filter: brightness(90%); transform: translateY(-1px); }
+        .btn-accent { background-color: #69AD5F; color: #fff; transition: all 0.3s ease; }
+        .btn-accent:hover { filter: brightness(90%); transform: translateY(-1px); }
+        .hero-overlay { background: linear-gradient(rgba(34, 82, 110, 0.94), rgba(34, 82, 110, 0.90)); }
+        .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo_primary.png" alt="Holdfolio" class="h-9" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="hidden font-bold text-xl text-deep-teal tracking-tight">HOLDFOLIO</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="inline-block px-3 py-1 rounded-full bg-holdfolio-green/10 text-holdfolio-green text-xs font-bold uppercase tracking-wider">Application Received</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Confirmation Hero -->
+    <header class="relative bg-gray-900 text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero_banner.jpg" alt="Real Estate Investment" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+            <!-- Confirmation Badge -->
+            <div class="inline-flex items-center space-x-2 bg-holdfolio-green/20 border border-holdfolio-green/40 rounded-full px-4 py-2 mb-6">
+                <svg class="w-5 h-5 text-holdfolio-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span class="text-sm font-bold text-holdfolio-green">Call Confirmed</span>
+            </div>
+
+            <h1 class="font-heading text-3xl md:text-5xl font-bold leading-tight mb-5">You Are In. Watch This Before Your Call.</h1>
+            <p class="text-base md:text-lg text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">Your investment strategy call is confirmed. Before we meet, watch the short video below and review the information on this page. Investors who prepare get more out of the conversation and make better decisions.</p>
+
+            <!-- Thank You Video Placeholder -->
+            <div class="max-w-3xl mx-auto mb-10">
+                <div class="aspect-video bg-black/60 rounded-xl shadow-2xl overflow-hidden border-2 border-white/10 flex items-center justify-center cursor-pointer group">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <p class="text-sm font-bold tracking-widest uppercase text-white/80">Watch Before Your Call</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What Happens Next Timeline -->
+            <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 md:p-8 max-w-2xl mx-auto text-left">
+                <h3 class="text-lg font-bold text-white mb-5 text-center">What Happens Next</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-holdfolio-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span class="text-white text-sm font-bold">1</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Right now</p>
+                            <p class="text-sm text-gray-300">Watch the video above and review this page.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-holdfolio-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span class="text-white text-sm font-bold">2</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Within 24 hours</p>
+                            <p class="text-sm text-gray-300">You will receive an email from our team confirming your call details.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-holdfolio-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span class="text-white text-sm font-bold">3</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">On your call</p>
+                            <p class="text-sm text-gray-300">A 30-minute, one-on-one conversation with our investor success team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Prep Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-xs font-bold uppercase tracking-widest text-holdfolio-blue mb-3">Prepare for Your Call</p>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal">How to Get the Most From Your Strategy Call</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8 text-center">
+                    <div class="w-14 h-14 bg-holdfolio-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-holdfolio-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-deep-teal mb-3">Know Your Goals</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Before the call, think about what matters most to you: passive income, tax benefits, diversification, or long-term wealth building. Knowing your priorities helps us point you to the right opportunities.</p>
+                </div>
+                <div class="card p-8 text-center">
+                    <div class="w-14 h-14 bg-holdfolio-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-holdfolio-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-deep-teal mb-3">Know Your Numbers</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Have an idea of how much you are looking to invest ($10,000 minimum) and your timeline. If you have current portfolio details or tax information, have them nearby.</p>
+                </div>
+                <div class="card p-8 text-center">
+                    <div class="w-14 h-14 bg-holdfolio-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-holdfolio-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-deep-teal mb-3">Bring Your Questions</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">About our process, our track record, specific deals, the risks, the tax benefits, anything. There are no bad questions. We will give you straight answers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is and Is Not For -->
+    <section class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal">Who This Is and Is Not For</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- For You -->
+                <div class="card p-8">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-holdfolio-green/10 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-holdfolio-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-deep-teal">This call is for you if:</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-holdfolio-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-gray-700">You are an accredited investor (net worth $1M+ or income $200K+)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-holdfolio-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-gray-700">You have at least $10,000 available to invest</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-holdfolio-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-gray-700">You are looking for passive real estate income without managing properties</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-holdfolio-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-gray-700">You understand that syndication investments are illiquid (3-7 year holds)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-holdfolio-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm text-gray-700">You are comfortable with the inherent risks of real estate investing</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Not For You -->
+                <div class="card p-8">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-deep-teal">This call is not for you if:</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <span class="text-sm text-gray-700">You need access to your capital within the next 12 months</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <span class="text-sm text-gray-700">You are seeking guaranteed returns (no legitimate operator can guarantee returns)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <span class="text-sm text-gray-700">You are not an accredited investor</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <span class="text-sm text-gray-700">You are not willing to invest at least $10,000</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <span class="text-sm text-gray-700">You are looking for day-trading or short-term speculation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-8">If any of the "not for you" criteria apply, please reschedule. We would rather save both of our time and connect when the timing is right.</p>
+        </div>
+    </section>
+
+    <!-- Breakout Videos Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-xs font-bold uppercase tracking-widest text-holdfolio-blue mb-3">Pre-Call Preparation</p>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal mb-3">Watch These Before Your Call</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">These short videos cover the most common questions our investors have. Watching them before your call will help you get more out of the conversation.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Video Card 1 -->
+                <div class="card overflow-hidden">
+                    <div class="aspect-video bg-gray-100 flex items-center justify-center cursor-pointer group relative">
+                        <div class="absolute inset-0 bg-deep-teal/80 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-blue/10 text-holdfolio-blue text-xs font-bold rounded mb-2">Getting Started</span>
+                        <h3 class="font-bold text-deep-teal mb-1">What Happens Next</h3>
+                        <p class="text-sm text-gray-500">Exactly what to expect before, during, and after your strategy call.</p>
+                    </div>
+                </div>
+                <!-- Video Card 2 -->
+                <div class="card overflow-hidden">
+                    <div class="aspect-video bg-gray-100 flex items-center justify-center cursor-pointer group relative">
+                        <div class="absolute inset-0 bg-deep-teal/80 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-green/10 text-holdfolio-green text-xs font-bold rounded mb-2">Qualification</span>
+                        <h3 class="font-bold text-deep-teal mb-1">Who This Is For (and Who It Is Not For)</h3>
+                        <p class="text-sm text-gray-500">Clear criteria for who benefits most from investing with Holdfolio.</p>
+                    </div>
+                </div>
+                <!-- Video Card 3 -->
+                <div class="card overflow-hidden">
+                    <div class="aspect-video bg-gray-100 flex items-center justify-center cursor-pointer group relative">
+                        <div class="absolute inset-0 bg-deep-teal/80 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-blue/10 text-holdfolio-blue text-xs font-bold rounded mb-2">How It Works</span>
+                        <h3 class="font-bold text-deep-teal mb-1">The Co-Investment Model Explained</h3>
+                        <p class="text-sm text-gray-500">Step-by-step walkthrough of how we source, vet, invest, and deliver returns.</p>
+                    </div>
+                </div>
+                <!-- Video Card 4 -->
+                <div class="card overflow-hidden">
+                    <div class="aspect-video bg-gray-100 flex items-center justify-center cursor-pointer group relative">
+                        <div class="absolute inset-0 bg-deep-teal/80 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="inline-block px-2 py-1 bg-deep-teal/10 text-deep-teal text-xs font-bold rounded mb-2">Trust & Track Record</span>
+                        <h3 class="font-bold text-deep-teal mb-1">How Do I Know This Is Legit?</h3>
+                        <p class="text-sm text-gray-500">Our track record, co-investment alignment, and why transparency is our differentiator.</p>
+                    </div>
+                </div>
+                <!-- Video Card 5 -->
+                <div class="card overflow-hidden">
+                    <div class="aspect-video bg-gray-100 flex items-center justify-center cursor-pointer group relative">
+                        <div class="absolute inset-0 bg-deep-teal/80 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-green/10 text-holdfolio-green text-xs font-bold rounded mb-2">Market Timing</span>
+                        <h3 class="font-bold text-deep-teal mb-1">Is Now the Right Time to Invest?</h3>
+                        <p class="text-sm text-gray-500">How we invest through market cycles and why waiting has an opportunity cost.</p>
+                    </div>
+                </div>
+                <!-- Video Card 6 -->
+                <div class="card overflow-hidden">
+                    <div class="aspect-video bg-gray-100 flex items-center justify-center cursor-pointer group relative">
+                        <div class="absolute inset-0 bg-deep-teal/80 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-blue/10 text-holdfolio-blue text-xs font-bold rounded mb-2">Call Preparation</span>
+                        <h3 class="font-bold text-deep-teal mb-1">How to Prepare for Your Call</h3>
+                        <p class="text-sm text-gray-500">What to bring, what to expect, and how to make the most of your 30 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-teal text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <img src="images/logo_primary.png" alt="Holdfolio" class="h-8 brightness-0 invert mb-4">
+                    <p class="text-sm text-gray-300 leading-relaxed">Holdfolio is a private real estate investment platform that co-invests alongside accredited investors in institutional-quality real estate deals across the United States.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Contact</h4>
+                    <p class="text-sm text-gray-300">jacob@holdfolio.com</p>
+                    <p class="text-sm text-gray-300">(317) 210-3209</p>
+                    <p class="text-sm text-gray-300 mt-2">6933 Buckridge West Dr<br>Indianapolis, IN 46227</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Connect</h4>
+                    <a href="https://www.linkedin.com/in/jacobblackett" target="_blank" class="text-sm text-gray-300 hover:text-white block mb-1">LinkedIn</a>
+                    <a href="https://www.instagram.com/jacob_blackett/" target="_blank" class="text-sm text-gray-300 hover:text-white block">Instagram</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-6">
+                <p class="text-xs text-gray-400 leading-relaxed">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Investments in real estate syndications involve risk, including the potential loss of principal. Past performance is not indicative of future results. Target returns are projections based on underwriting assumptions and are not guaranteed. All investors must meet accredited investor requirements as defined by the SEC. See offering documents for complete risk disclosures. Testimonials reflect individual experiences and are not representative of all investors.</p>
+                <p class="text-xs text-gray-500 mt-4">&copy; 2026 Holdfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

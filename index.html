@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holdfolio | Earn Targeted 15-22% Returns on Institutional Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito Sans', sans-serif; color: #333333; background: #fff; }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .bg-holdfolio-blue { background-color: #4C93BB; }
+        .text-holdfolio-blue { color: #4C93BB; }
+        .border-holdfolio-blue { border-color: #4C93BB; }
+        .bg-holdfolio-green { background-color: #69AD5F; }
+        .text-holdfolio-green { color: #69AD5F; }
+        .bg-deep-teal { background-color: #22526E; }
+        .text-deep-teal { color: #22526E; }
+        .bg-medium-teal { background-color: #366885; }
+        .btn-primary { background-color: #4C93BB; color: #fff; transition: all 0.3s ease; }
+        .btn-primary:hover { filter: brightness(90%); transform: translateY(-1px); }
+        .btn-accent { background-color: #69AD5F; color: #fff; transition: all 0.3s ease; }
+        .btn-accent:hover { filter: brightness(90%); transform: translateY(-1px); }
+        .hero-overlay { background: linear-gradient(rgba(34, 82, 110, 0.92), rgba(34, 82, 110, 0.88)); }
+        .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .step-content { display: none; }
+        .step-content.active { display: block; animation: slideUp 0.35s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .option-btn { transition: all 0.2s ease; }
+        .option-btn:hover { border-color: #4C93BB; background: rgba(76,147,187,0.08); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-answer.open { max-height: 500px; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo_primary.png" alt="Holdfolio" class="h-9" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="hidden font-bold text-xl text-deep-teal tracking-tight">HOLDFOLIO</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#how-it-works" class="text-sm font-semibold text-deep-teal hover:opacity-75">How It Works</a>
+                <a href="#track-record" class="text-sm font-semibold text-deep-teal hover:opacity-75">Track Record</a>
+                <a href="#reviews" class="text-sm font-semibold text-deep-teal hover:opacity-75">Investor Reviews</a>
+                <a href="#qualify" class="btn-primary px-5 py-2 rounded-lg text-sm font-bold">Schedule a Call</a>
+            </div>
+            <button class="md:hidden text-deep-teal" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 pt-2 space-y-2">
+            <a href="#how-it-works" class="block text-sm font-semibold text-deep-teal py-2">How It Works</a>
+            <a href="#track-record" class="block text-sm font-semibold text-deep-teal py-2">Track Record</a>
+            <a href="#reviews" class="block text-sm font-semibold text-deep-teal py-2">Investor Reviews</a>
+            <a href="#qualify" class="block btn-primary text-center px-5 py-2 rounded-lg text-sm font-bold">Schedule a Call</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-gray-900 text-white overflow-hidden pb-12" id="qualify">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero_banner.jpg" alt="Real Estate Investment" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3 py-1 rounded bg-white/10 text-xs font-bold uppercase tracking-widest mb-5 border border-white/20">Accredited Investors Only</span>
+                <h1 class="font-heading text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 max-w-5xl mx-auto">Earn Targeted 15-22% Annualized Returns on Institutional Real Estate</h1>
+                <p class="text-base md:text-lg text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">We invest our own capital into vetted real estate deals across 19 states, then open them so you can co-invest alongside us. 155 full-cycle deals. 17.9% average annualized return. Quarterly distributions. 80%+ tax shield.</p>
+                <p class="text-xs text-gray-400 max-w-2xl mx-auto">*Past performance is not indicative of future results. Target returns are projections, not guarantees. All investments involve risk including loss of principal.</p>
+            </div>
+
+            <!-- VSL Placeholder -->
+            <div class="max-w-4xl mx-auto mb-10">
+                <div class="aspect-video bg-black/60 rounded-xl shadow-2xl overflow-hidden border-2 border-white/10 flex items-center justify-center cursor-pointer group">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <p class="text-sm font-bold tracking-widest uppercase text-white/80">Watch the Investor Overview</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Step Form (Hero) -->
+            <div class="max-w-xl mx-auto">
+                <div class="bg-white rounded-xl p-6 md:p-8 shadow-2xl text-gray-800" id="hero-form">
+                    <h3 class="text-lg font-bold text-deep-teal text-center mb-1">See If You Qualify</h3>
+                    <p class="text-sm text-gray-500 text-center mb-5">Answer a few quick questions to get started.</p>
+
+                    <!-- Progress Bar -->
+                    <div class="flex items-center justify-center space-x-2 mb-6">
+                        <div class="h-1.5 rounded-full bg-holdfolio-blue transition-all duration-300" id="hero-progress" style="width: 20%"></div>
+                        <div class="h-1.5 flex-1 rounded-full bg-gray-200"></div>
+                    </div>
+                    <p class="text-xs text-gray-400 text-center mb-4" id="hero-step-label">Step 1 of 5</p>
+
+                    <!-- Step 1 -->
+                    <div class="step-content active" id="hero-step-1">
+                        <p class="font-semibold text-center mb-4">Are you an accredited investor?</p>
+                        <div class="space-y-3">
+                            <button onclick="heroNext(2, 'Yes')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold hover:border-holdfolio-blue">Yes</button>
+                            <button onclick="heroNext(2, 'No')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold hover:border-holdfolio-blue">No</button>
+                            <button onclick="heroNext(2, 'Not sure')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold hover:border-holdfolio-blue">I am not sure</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-content" id="hero-step-2">
+                        <p class="font-semibold text-center mb-4">How much are you looking to invest?</p>
+                        <div class="space-y-3">
+                            <button onclick="heroNext(3, '$10K-$25K')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$10,000 - $25,000</button>
+                            <button onclick="heroNext(3, '$25K-$50K')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$25,000 - $50,000</button>
+                            <button onclick="heroNext(3, '$50K-$100K')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$50,000 - $100,000</button>
+                            <button onclick="heroNext(3, '$100K+')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$100,000+</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-content" id="hero-step-3">
+                        <p class="font-semibold text-center mb-4">What is your primary investment goal?</p>
+                        <div class="space-y-3">
+                            <button onclick="heroNext(4, 'Passive income')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Passive income / cash flow</button>
+                            <button onclick="heroNext(4, 'Tax benefits')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Tax benefits / depreciation</button>
+                            <button onclick="heroNext(4, 'Diversification')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Portfolio diversification</button>
+                            <button onclick="heroNext(4, 'Wealth building')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Long-term wealth building</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-content" id="hero-step-4">
+                        <p class="font-semibold text-center mb-4">When are you looking to invest?</p>
+                        <div class="space-y-3">
+                            <button onclick="heroNext(5, 'Immediately')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Immediately (this quarter)</button>
+                            <button onclick="heroNext(5, 'Within 6 months')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Within 6 months</button>
+                            <button onclick="heroNext(5, 'Within 12 months')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Within 12 months</button>
+                            <button onclick="heroNext(5, 'Researching')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Just researching</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Contact Info -->
+                    <div class="step-content" id="hero-step-5">
+                        <p class="font-semibold text-center mb-4">Almost there. Enter your details.</p>
+                        <form onsubmit="event.preventDefault(); window.location.href='/thankyou';" class="space-y-3">
+                            <input type="text" placeholder="First Name" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                            <input type="text" placeholder="Last Name" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                            <input type="email" placeholder="Email" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                            <input type="tel" placeholder="Phone Number" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                            <button type="submit" class="btn-accent w-full py-3 rounded-lg font-bold text-sm uppercase tracking-wide">Schedule My Strategy Call</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof Bar -->
+    <section class="py-10 bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-center text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">As Featured In</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 mb-10">
+                <img src="images/press_bloomberg.webp" alt="Bloomberg" class="h-6 md:h-8 object-contain grayscale">
+                <img src="images/press_forbes.webp" alt="Forbes" class="h-6 md:h-8 object-contain grayscale">
+                <img src="images/press_yahoo_finance.webp" alt="Yahoo Finance" class="h-6 md:h-8 object-contain grayscale">
+                <img src="images/press_benzinga.webp" alt="Benzinga" class="h-6 md:h-8 object-contain grayscale">
+                <img src="images/press_morningstar.webp" alt="Morningstar" class="h-6 md:h-8 object-contain grayscale">
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div><p class="text-2xl md:text-3xl font-bold text-deep-teal">155+</p><p class="text-xs text-gray-500 mt-1">Full-Cycle Deals</p></div>
+                <div><p class="text-2xl md:text-3xl font-bold text-deep-teal">17.9%+</p><p class="text-xs text-gray-500 mt-1">Avg. Annualized Return*</p></div>
+                <div><p class="text-2xl md:text-3xl font-bold text-deep-teal">$50M+</p><p class="text-xs text-gray-500 mt-1">Capital Deployed</p></div>
+                <div><p class="text-2xl md:text-3xl font-bold text-deep-teal">10+</p><p class="text-xs text-gray-500 mt-1">Years of Operations</p></div>
+            </div>
+            <p class="text-center text-xs text-gray-400 mt-4">*Weighted average on realized investments. Past performance is not indicative of future results.</p>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <img src="images/jacob_blackett_headshot.jpeg" alt="Jacob Blackett, Founder of Holdfolio" class="rounded-xl shadow-lg w-full max-w-md mx-auto">
+                </div>
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-holdfolio-blue mb-3">Built by an Investor, for Investors</p>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal mb-4">Jacob Blackett</h2>
+                    <p class="text-sm text-gray-500 font-semibold mb-4">Founder & CEO, Holdfolio</p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Jacob started investing in real estate at 19. By 2019, he had built a portfolio of 553 rental units. In 2020, he sold the entire portfolio to build the co-investment model that powers Holdfolio today: partnering with proven operators across the country and investing his own capital in every deal before opening it to investors.</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">He has personally placed over $50 million into income-producing real estate and is also the CEO of SponsorCloud, the technology platform powering real estate syndicators nationwide.</p>
+                    <div class="bg-white border-l-4 border-holdfolio-blue pl-4 py-3 rounded-r-lg">
+                        <p class="text-deep-teal font-semibold italic">"We invest our own money in every deal before we ask you to invest yours. That is the strongest form of alignment we can offer."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 md:py-20 bg-white" id="how-it-works">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-holdfolio-blue mb-3">The Co-Investment Model</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal mb-3">How It Works</h2>
+            <p class="text-gray-500 mb-12 max-w-2xl mx-auto">Three steps. Fully passive. Your money works alongside ours.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8">
+                    <div class="w-14 h-14 bg-holdfolio-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-holdfolio-blue font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-deep-teal mb-3">We Source and Vet</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">We review hundreds of deals every year across multifamily, storage, NNN, and commercial. We partner with experienced operators across 19 states. Out of hundreds, we select roughly one per month.</p>
+                </div>
+                <div class="card p-8">
+                    <div class="w-14 h-14 bg-holdfolio-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-holdfolio-blue font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-deep-teal mb-3">We Invest First</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Before opening any deal to investors, Holdfolio invests its own capital. We put our money in first. Same deal, same terms, same alignment. If we would not invest our own capital, we do not ask you to.</p>
+                </div>
+                <div class="card p-8">
+                    <div class="w-14 h-14 bg-holdfolio-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-holdfolio-blue font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-deep-teal mb-3">You Co-Invest and Earn</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">You invest starting at $10,000. You receive quarterly distributions. You benefit from an 80%+ tax shield through depreciation. You never manage a single property. One-time 2.5% fee. No annual fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Record / Case Studies -->
+    <section class="py-16 md:py-20 bg-gray-50" id="track-record">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-holdfolio-blue mb-3">Where Your Capital Goes to Work</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal mb-10">Investment Examples</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card overflow-hidden">
+                    <img src="images/property_showcase.png" alt="Multifamily Property" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-blue/10 text-holdfolio-blue text-xs font-bold rounded mb-3">Multifamily</span>
+                        <h3 class="font-bold text-deep-teal mb-2">Haven at Loyd Park</h3>
+                        <div class="space-y-1 text-sm text-gray-600">
+                            <p>Cash-on-Cash: <span class="font-bold text-deep-teal">8%</span></p>
+                            <p>Target IRR: <span class="font-bold text-deep-teal">17.6 - 22.9%</span></p>
+                            <p>Hold: 3-5 years</p>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-3">*Target returns are projections, not guarantees.</p>
+                    </div>
+                </div>
+                <div class="card overflow-hidden">
+                    <img src="images/property_image.jpg" alt="Storage Property" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-2 py-1 bg-holdfolio-green/10 text-holdfolio-green text-xs font-bold rounded mb-3">Boat & RV Storage</span>
+                        <h3 class="font-bold text-deep-teal mb-2">Lakepoint Storage</h3>
+                        <div class="space-y-1 text-sm text-gray-600">
+                            <p>Cash-on-Cash: <span class="font-bold text-deep-teal">6 - 12.8%</span></p>
+                            <p>Target IRR: <span class="font-bold text-deep-teal">23 - 27.2%</span></p>
+                            <p>Hold: 3-7 years</p>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-3">*Target returns are projections, not guarantees.</p>
+                    </div>
+                </div>
+                <div class="card overflow-hidden">
+                    <img src="images/homepage_content.jpg" alt="NNN Property" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-2 py-1 bg-deep-teal/10 text-deep-teal text-xs font-bold rounded mb-3">NNN Lease</span>
+                        <h3 class="font-bold text-deep-teal mb-2">White Plains Linen</h3>
+                        <div class="space-y-1 text-sm text-gray-600">
+                            <p>Cash-on-Cash: <span class="font-bold text-deep-teal">8.2 - 10.1%</span></p>
+                            <p>Target IRR: <span class="font-bold text-deep-teal">14.3 - 16.1%</span></p>
+                            <p>Hold: 5-7 years</p>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-3">*Target returns are projections, not guarantees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 md:py-20 bg-white" id="reviews">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-holdfolio-blue mb-3">Investor Reviews</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal mb-10">What Our Investors Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 text-left">
+                    <div class="flex items-center mb-3"><div class="flex text-yellow-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">"I have been investing with Holdfolio for over five years. Consistent 8-10% annual returns. The team is responsive and transparent."</p>
+                    <p class="font-bold text-deep-teal text-sm">David S.</p><p class="text-xs text-gray-400">Holdfolio Investor</p>
+                </div>
+                <div class="card p-6 text-left">
+                    <div class="flex items-center mb-3"><div class="flex text-yellow-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">"Superb customer support. Returns in the 8-10% annual range. I trust this team with my capital."</p>
+                    <p class="font-bold text-deep-teal text-sm">Jared T.</p><p class="text-xs text-gray-400">Holdfolio Investor</p>
+                </div>
+                <div class="card p-6 text-left">
+                    <div class="flex items-center mb-3"><div class="flex text-yellow-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">"Jacob's entrepreneurial track record and the team's responsiveness set Holdfolio apart from other platforms."</p>
+                    <p class="font-bold text-deep-teal text-sm">Thomas J.</p><p class="text-xs text-gray-400">Holdfolio Investor</p>
+                </div>
+                <div class="card p-6 text-left">
+                    <div class="flex items-center mb-3"><div class="flex text-yellow-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">"I love the personal owner involvement. It does not feel like dealing with a faceless institution."</p>
+                    <p class="font-bold text-deep-teal text-sm">Christina W.</p><p class="text-xs text-gray-400">Holdfolio Investor</p>
+                </div>
+                <div class="card p-6 text-left">
+                    <div class="flex items-center mb-3"><div class="flex text-yellow-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">"Thorough property evaluation. I feel confident in the Indianapolis market knowledge."</p>
+                    <p class="font-bold text-deep-teal text-sm">Harry L.</p><p class="text-xs text-gray-400">Holdfolio Investor</p>
+                </div>
+            </div>
+            <p class="text-xs text-gray-400 mt-8 max-w-3xl mx-auto">Testimonials reflect individual investor experiences and are not representative of all investors. Testimonial providers are Holdfolio investors and were not compensated for their statements. Individual results vary. Past performance is not indicative of future results.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 md:py-20 bg-deep-teal text-white" id="final-cta">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Ready to Invest Alongside Us?</h2>
+            <p class="text-gray-300 mb-10">Fill out the form below. It takes 60 seconds. A member of our investor success team will reach out to schedule your one-on-one strategy call.</p>
+
+            <!-- Second Form Instance -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-2xl text-gray-800 max-w-xl mx-auto" id="bottom-form">
+                <h3 class="text-lg font-bold text-deep-teal text-center mb-1">See If You Qualify</h3>
+                <p class="text-sm text-gray-500 text-center mb-5">Answer a few quick questions.</p>
+                <div class="flex items-center justify-center space-x-2 mb-6">
+                    <div class="h-1.5 rounded-full bg-holdfolio-blue transition-all duration-300" id="bottom-progress" style="width: 20%"></div>
+                    <div class="h-1.5 flex-1 rounded-full bg-gray-200"></div>
+                </div>
+                <p class="text-xs text-gray-400 text-center mb-4" id="bottom-step-label">Step 1 of 5</p>
+
+                <div class="step-content active" id="bottom-step-1">
+                    <p class="font-semibold text-center mb-4">Are you an accredited investor?</p>
+                    <div class="space-y-3">
+                        <button onclick="bottomNext(2, 'Yes')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Yes</button>
+                        <button onclick="bottomNext(2, 'No')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">No</button>
+                        <button onclick="bottomNext(2, 'Not sure')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">I am not sure</button>
+                    </div>
+                </div>
+                <div class="step-content" id="bottom-step-2">
+                    <p class="font-semibold text-center mb-4">How much are you looking to invest?</p>
+                    <div class="space-y-3">
+                        <button onclick="bottomNext(3, '$10K-$25K')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$10,000 - $25,000</button>
+                        <button onclick="bottomNext(3, '$25K-$50K')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$25,000 - $50,000</button>
+                        <button onclick="bottomNext(3, '$50K-$100K')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$50,000 - $100,000</button>
+                        <button onclick="bottomNext(3, '$100K+')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">$100,000+</button>
+                    </div>
+                </div>
+                <div class="step-content" id="bottom-step-3">
+                    <p class="font-semibold text-center mb-4">What is your primary investment goal?</p>
+                    <div class="space-y-3">
+                        <button onclick="bottomNext(4, 'Passive income')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Passive income / cash flow</button>
+                        <button onclick="bottomNext(4, 'Tax benefits')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Tax benefits / depreciation</button>
+                        <button onclick="bottomNext(4, 'Diversification')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Portfolio diversification</button>
+                        <button onclick="bottomNext(4, 'Wealth building')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Long-term wealth building</button>
+                    </div>
+                </div>
+                <div class="step-content" id="bottom-step-4">
+                    <p class="font-semibold text-center mb-4">When are you looking to invest?</p>
+                    <div class="space-y-3">
+                        <button onclick="bottomNext(5, 'Immediately')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Immediately (this quarter)</button>
+                        <button onclick="bottomNext(5, 'Within 6 months')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Within 6 months</button>
+                        <button onclick="bottomNext(5, 'Within 12 months')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Within 12 months</button>
+                        <button onclick="bottomNext(5, 'Researching')" class="option-btn w-full border-2 border-gray-200 rounded-lg py-3 px-4 text-left font-semibold">Just researching</button>
+                    </div>
+                </div>
+                <div class="step-content" id="bottom-step-5">
+                    <p class="font-semibold text-center mb-4">Almost there. Enter your details.</p>
+                    <form onsubmit="event.preventDefault(); window.location.href='/thankyou';" class="space-y-3">
+                        <input type="text" placeholder="First Name" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                        <input type="text" placeholder="Last Name" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                        <input type="email" placeholder="Email" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                        <input type="tel" placeholder="Phone Number" required class="w-full border border-gray-300 rounded-lg py-3 px-4 text-sm focus:outline-none focus:border-holdfolio-blue">
+                        <button type="submit" class="btn-accent w-full py-3 rounded-lg font-bold text-sm uppercase tracking-wide">Schedule My Strategy Call</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-deep-teal text-center mb-10">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>What is the minimum investment?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">Minimums start at $10,000-$20,000 depending on the deal. This is significantly lower than most syndications, which typically require $50,000-$100,000.</p></div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>Who can invest?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">Holdfolio investments are available to accredited investors. An accredited investor has a net worth exceeding $1 million (excluding primary residence) or annual income exceeding $200,000 ($300,000 joint) for the past two years.</p></div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>How does Holdfolio make money?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">We charge a one-time 2.5% fee at the time of investment. No ongoing annual management fees. We also earn a share of the profits alongside our investors, which aligns our incentives.</p></div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>What kind of returns should I expect?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">Our historical average across 155 full-cycle deals is 17.9% annualized. Current deals target 15-22% annualized returns. Past performance is not indicative of future results. Target returns are projections, not guarantees.</p></div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>How long is my money tied up?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">Hold periods are typically 3-7 years depending on the deal. These are illiquid investments with no secondary market. Only invest capital you do not need in the short term.</p></div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>What are the tax benefits?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">Investors typically benefit from an 80%+ tax shield through depreciation and paper losses that offset ordinary income. Specific tax benefits depend on your situation. Consult your tax advisor.</p></div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-deep-teal flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span>What happens if a deal does not perform?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-4"><p class="text-sm text-gray-600 leading-relaxed">Real estate investments carry risk, including loss of principal. We mitigate risk through operator vetting, diversification across 19 states and 7 asset types, and co-investing our own capital. If a deal underperforms, we lose money alongside you.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-teal text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <img src="images/logo_primary.png" alt="Holdfolio" class="h-8 brightness-0 invert mb-4">
+                    <p class="text-sm text-gray-300 leading-relaxed">Holdfolio is a private real estate investment platform that co-invests alongside accredited investors in institutional-quality real estate deals across the United States.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Contact</h4>
+                    <p class="text-sm text-gray-300">jacob@holdfolio.com</p>
+                    <p class="text-sm text-gray-300">(317) 210-3209</p>
+                    <p class="text-sm text-gray-300 mt-2">6933 Buckridge West Dr<br>Indianapolis, IN 46227</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Connect</h4>
+                    <a href="https://www.linkedin.com/in/jacobblackett" target="_blank" class="text-sm text-gray-300 hover:text-white block mb-1">LinkedIn</a>
+                    <a href="https://www.instagram.com/jacob_blackett/" target="_blank" class="text-sm text-gray-300 hover:text-white block">Instagram</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-6">
+                <p class="text-xs text-gray-400 leading-relaxed">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Investments in real estate syndications involve risk, including the potential loss of principal. Past performance is not indicative of future results. Target returns are projections based on underwriting assumptions and are not guaranteed. All investors must meet accredited investor requirements as defined by the SEC. See offering documents for complete risk disclosures. Testimonials reflect individual experiences and are not representative of all investors.</p>
+                <p class="text-xs text-gray-500 mt-4">&copy; 2026 Holdfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hero form navigation
+        function heroNext(step, answer) {
+            for (let i = 1; i <= 5; i++) {
+                const el = document.getElementById('hero-step-' + i);
+                if (el) el.classList.remove('active');
+            }
+            document.getElementById('hero-step-' + step).classList.add('active');
+            document.getElementById('hero-progress').style.width = (step * 20) + '%';
+            document.getElementById('hero-step-label').textContent = 'Step ' + step + ' of 5';
+        }
+
+        // Bottom form navigation
+        function bottomNext(step, answer) {
+            for (let i = 1; i <= 5; i++) {
+                const el = document.getElementById('bottom-step-' + i);
+                if (el) el.classList.remove('active');
+            }
+            document.getElementById('bottom-step-' + step).classList.add('active');
+            document.getElementById('bottom-progress').style.width = (step * 20) + '%';
+            document.getElementById('bottom-step-label').textContent = 'Step ' + step + ' of 5';
+        }
+
+        // FAQ accordion
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('svg');
+            answer.classList.toggle('open');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+</html>
